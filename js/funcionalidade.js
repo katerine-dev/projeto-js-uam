@@ -28,3 +28,31 @@ function cumprimentar3(){
         alert("Muito Obrigado por permanecer no curso!");
 }
 }
+
+function mensagem(){
+    let nomeUsuario = document.getElementById("nome").value;
+    /*
+    Dado: atributo. (campo do objeto que armazena um dado).
+    Processamento: método, ou função, ou procedimento
+    */
+    document.getElementById("resp").innerHTML = "<br>Olá, " + nomeUsuario.toUpperCase() + "!"; // MAIÚSCULO
+    document.getElementById("resp").innerHTML = resp.innerHTML + "<br>Olá, " + nomeUsuario.toLowerCase() + "!"; // minúsculo
+    document.getElementById("resp").innerHTML = resp.innerHTML + "<br>Número de caracteres informados:  " + nomeUsuario.length;
+    document.getElementById("resp").innerHTML = resp.innerHTML + "<br>Caracter da posição 1:  " + nomeUsuario.charAt(1);
+}
+
+/*
+function mensagem(){
+        resp.innerHTML = "<br>Olá, " + nome.value + "!";
+    }
+
+Aqui o ambiente do Javascript com o nome do ID, assim a função pode ficar mais simples.
+
+OBS: 
++= operador de atribuição mais igual = ele pega o que ta na esquerda e concatena com o da direita.
+ex: 
+let x = 1
+x += 10 ------ x = 11
+equivalente let x = 1 
+x = x + 10 
+*/

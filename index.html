@@ -26,20 +26,39 @@
     </script>
     <br>
     <br>
-    <br>
     Exemplo 3:
     <button onclick=cumprimentar2()>
         Olá
     </button>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
     Exemplo 4:
     <button onclick=cumprimentar3()>
         Sair
     </button>
+    <br>
+    <br>
+    Exemplo 5:
+    <script type="text/javascript"> 
+        var num1, num2, soma;
+
+        num1 = prompt("Informe o primeiro número:", ""); 
+        //Type Cast (conversão de tipo ): 
+        num1Convertido = parseInt(num1);
+        num2 = prompt("Informe o segundo número:", "");
+        //Type Cast (conversão de tipo ): 
+        num2Convertido = parseInt(num2);
+        soma = num1Convertido + num2Convertido; // concatenação 
+
+        document.write(`${num1} + ${num2} = ${soma}`)
+    </script>
+    <br>
+    <br>
+    Exemplo 6:
+    <input id="nome" placeholder="Informe seu nome: ">
+    <button onclick="mensagem()">OK</button>
+    <div id="resp"></div>
+
 
 </body>
 
