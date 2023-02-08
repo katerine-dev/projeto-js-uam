@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> switch-case</title>
+</head>  
+<body>
+Exemplo 1:
+    <script type="text/javascript">
+        var num = parseFloat(prompt("Informe o número", ""));
+
+        document.write(`Valor informado: ${num} <br>`);
+
+        //num ++; //num = num + 1; ++ é acrescentar - operação de incremento.
+        // Operador unário de incremento pós fixado. Pós fixado: usa, depois incrementa. 
+        document.write(`Novo valor: ${num++} <br>`);
+        // incremento pré fixado. incrementa, depois usa. ${++num}
+        document.write(`Valor informado: ${num} <br>`);
+</script>
+<br>
+<br>
+Exemplo 2:
+    <script type="text/javascript">
+        var a = 2, b = 3, resp;
+
+        resp = a++ + --b;
+
+        document.write("<br>resp: ", resp);
+
+    </script>
+<br>
+<br>
+Exemplo 3:
+    <script type="text/javascript">
+         var num = parseFloat(prompt("Informe o número", ""));
+
+        document.write(`Valor informado: ${num} <br>`);
+        num += 2; //incremento 
+        document.write(`Novo valor: ${num++} <br>`);
+    
+        /*
+        Operadores de Comparação
+
+        1) Igual (==)
+        Compara o valor, mas não compara o tipo (faz type cast, conversão de tipo)
+
+        2) Idêntico (===)
+        Compara o valor e também o tipo (não faz type cast)
+
+        3) Diferente
+
+        != não considera o tipo (faz type cast)
+        !== considera o tipo (não faz type cast)
+        */
+    </script>
+<br>
+<br>
+Exemplo 4:
+    <script type="text/javascript">
+        var resp;
+
+        resp = 5 <= 5; 
+
+        document.write('<br> 5 < 5:' + resp);
+    </script>
+<br>
+<br>
+Exemplo 5:
+    <script type="text/javascript">
+        var resp;
+
+        resp = (5 <= 5);
+        resp = !resp // ! = NOT 
+
+        document.write('<br> !(5 < 5):' + resp);
+    </script>
+<br>
+<br>
+Exemplo 6:
+    <script type="text/javascript">
+        var resp;
+
+        resp = (5 <= 5) || (4 < 7); // OR
+
+        document.write('<br> resp:' + resp);
+    </script>
+<br>
+<br>
+Exemplo 7:
+    <script type="text/javascript">
+        var resp;
+
+        resp = (5 <= 5) && (4 < 7); // AND
+
+        document.write('<br> resp:' + resp);
+    </script>
+<br>
+<br>
+Exemplo 8:
+    <script type="text/javascript">
+        document.write('<br> resp:' + Math.cos(90 * Math.PI/180)); // existe também o Math.sin (seno); Math.log para log
+    </script>
+</body>
+</html>
