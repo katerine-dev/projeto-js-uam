@@ -1,2 +1,3 @@
-# projeto-js-uam
-Curso de extensão UAM - Javascript
+# Projeto de JavaScript
+
+## Curso de Extensão: Introdução ao JavaScript - Anhembi Morumbi
